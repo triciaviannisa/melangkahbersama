@@ -6,13 +6,14 @@
     <title>Maria Patricia Viannisa</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <style>
     body { font-family: 'Montserrat', sans-serif; }
     .heading-font { font-family: 'Playfair Display', serif; }
     </style>
 
   </head>
-  <body class="bg-[#faf6ed] text-slate-900">
+  <body class="bg-[#faf6ed] text-slate-900 overflow-x-hidden">
     <!-- ===== NAVBAR ===== -->
     <header class="sticky top-0 z-50 bg-[#faf6ed] border-b border-slate-200">
       <div class="w-full px-4 sm:px-8 lg:px-12 flex items-center justify-between h-16">
@@ -30,11 +31,11 @@
             <a href="#services" class="hover:text-pink-600">Services</a>
             <a href="#results" class="hover:text-pink-600">Results</a>
           </nav>
-          <a href="#contact" class="hidden md:inline-flex items-center rounded-full bg-pink-500 text-white px-5 py-2 text-sm font-semibold shadow hover:bg-pink-600">
+          <!-- <a href="#contact" class="hidden md:inline-flex items-center rounded-full bg-pink-500 text-white px-5 py-2 text-sm font-semibold shadow hover:bg-pink-600">
             Get started
-          </a>
+          </a> -->
           <!-- Mobile menu button -->
-          <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-700 hover:bg-slate-100">
+          <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-slate-700 hover:bg-slate-100" aria-controls="mobileMenu" aria-expanded="false">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
@@ -56,64 +57,142 @@
     </header>
     <!-- ===== HERO ===== -->
     <section id="hero" class="relative overflow-hidden">
-      <div class="max-w-7xl min-h-[600px] mx-auto px-6 lg:px-12 py-28 lg:py-40 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="max-w-7xl min-h-[600px] mx-auto px-6 lg:px-12 py-4 sm:py-28 lg:py-12 grid md:grid-cols-2 gap-12 items-center">
         <!-- Left content -->
-        <div>
-          <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight">
-            <span class="text-[#275891] text-8xl heading-font">Maria <br/>Patricia Viannisa</span><br/>
-            <span class="text-[#171614] font-normal text-2xl">Calon Ketua Umum PPI Jerman 2025/2026</span>
+        <div data-aos="fade-up">
+          <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-tight">
+            <span class="text-[#275891] text-5xl sm:text-6xl md:text-7xl lg:text-8xl heading-font">Maria <br/>Patricia Viannisa</span><br/>
+            <span class="text-[#171614] font-normal text-base sm:text-lg md:text-xl lg:text-2xl">Calon Ketua Umum PPI Jerman 2025/2026</span>
           </h1>
         </div>
 
         <!-- Right image -->
         <div class="flex justify-center lg:justify-end">
-          <img src="./hero.png" alt="Hero" class="w-[700px] h-[700px] object-cover rounded-2xl" />
+          <img src="./hero.png" alt="Hero" data-aos="zoom-in" data-aos-delay="100" class="w-full max-w-[280px] sm:max-w-[380px] md:max-w-[480px] lg:w-[700px] h-auto object-cover rounded-2xl" />
         </div>
       </div>
     </section>
 
+    <!-- ===== TIMELINE ===== -->
+    <section id="timeline" class="py-12 sm:py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+          <h2 data-aos="fade-up" class="text-4xl sm:text-5xl md:text-6xl mb-8 sm:mb-12 font-extrabold text-[#275891] heading-font">Rekam Jejak</h2>
+          
+        </div>
 
-    <section id="vision" class="py-24 bg-[#275891]/90">
+        <div class="relative overflow-hidden">
+          <!-- center line -->
+          <div class="hidden md:block absolute left-1/2 -translate-x-1/2 inset-y-0 w-1 bg-[#e6d8a6] rounded-full pointer-events-none"></div>
+
+          <ol class="space-y-6 sm:space-y-8 md:space-y-12 pl-4 sm:pl-5 md:pl-0 border-l md:border-0 border-[#e6d8a6]">
+            <!-- Item 1 -->
+            <li class="relative grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-6 items-start">
+              <span class="md:hidden absolute -left-1.5 top-2 w-2.5 h-2.5 rounded-full bg-[#e6d8a6]"></span>
+              <div class="md:text-right" data-aos="fade-right">
+                <div class="md:mt-2 text-base sm:text-lg font-semibold text-slate-900 leading-tight">Jul 2017 - May 2020</div>
+              </div>
+              <div class="relative" data-aos="fade-left" data-aos-delay="100">
+                <div class="text-base sm:text-lg md:text-xl font-semibold text-slate-900 leading-relaxed break-words">SMA Santa Ursula BSD, Tangerang Selatan</div>
+              </div>
+            </li>
+            <!-- Item 2 -->
+            <li class="relative grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-6 items-start">
+              <span class="md:hidden absolute -left-1.5 top-2 w-2.5 h-2.5 rounded-full bg-[#e6d8a6]"></span>
+              <div class="md:text-right" data-aos="fade-right">
+                <div class="md:mt-2 text-base sm:text-lg font-semibold text-slate-900 leading-tight">April 2021 - Jan 2022</div>
+              </div>
+              <div class="relative" data-aos="fade-left" data-aos-delay="100">
+                <div class="text-base sm:text-lg md:text-xl font-semibold text-slate-900 leading-relaxed break-words">Studienkolleg Mittelhessen, The Philips University Marburg</div>
+              </div>
+            </li>
+            <!-- Item 3 -->
+            <li class="relative grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-6 items-start">
+              <span class="md:hidden absolute -left-1.5 top-2 w-2.5 h-2.5 rounded-full bg-[#e6d8a6]"></span>
+              <div class="md:text-right" data-aos="fade-right">
+                <div class="md:mt-2 text-base sm:text-lg font-semibold text-slate-900 leading-tight">Oct 2021 - Sekarang</div>
+              </div>
+              <div class="relative" data-aos="fade-left" data-aos-delay="100">
+                <div class="text-base sm:text-lg md:text-xl font-semibold text-slate-900 leading-relaxed break-words">B.Sc. Computational Linguistics, The Ludwig Maximilian University of Munich</div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div> 
+    </section>
+
+
+    <section id="vision" class="py-16 sm:py-24 bg-[#275891]/90">
       <div class="max-w-4xl mx-auto px-6 text-center">
-        <h2 class="text-6xl font-bold text-[#f9dc5c] heading-font">Visi</h2>
-        <p class="mt-6 text-2xl text-[#f9dc5c] leading-relaxed">
+        <h2 data-aos="fade-up" class="text-4xl sm:text-6xl font-bold text-[#f9dc5c] heading-font">Visi</h2>
+        <p data-aos="fade-up" data-aos-delay="100" class="mt-6 text-xl sm:text-2xl text-[#f9dc5c] leading-relaxed">
           Menjadikan PPI Jerman sebagai rumah bagi pelajar Indonesia di Jerman yang inklusif, inovatif, dan kolaboratif, guna mendukung pengembangan diri seluruh anggotanya
         </p>
       </div>
     </section>
 
       <!-- ===== MISSION (placeholder) ===== -->
-  <section id="mission" class="py-24">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-6xl font-extrabold text-center text-[#275891] heading-font">Misi</h2>
-    <div class="mt-12 grid gap-8 md:grid-cols-2">
+  <section id="mission" class="py-12 sm:py-24">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-16">
+    <h2 data-aos="fade-up" class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-center text-[#275891] heading-font">Misi</h2>
+    <div class="mt-12 grid gap-y-10 gap-x-12 md:grid-cols-2">
       <!-- Left column -->
       <div class="space-y-8">
         <div>
-          <h3 class="text-2xl font-normal text-center text-[#171614]">1. Membangun sistem internal organisasi yang Berkelanjutan dan berlandaskan semangat kekeluargaan</h3>
+          <h3 data-aos="fade-up" data-aos-delay="0" class="text-lg sm:text-xl md:text-xl lg:text-xl xl:text-2xl leading-relaxed font-normal text-center md:text-left text-[#171614] max-w-prose md:max-w-[40ch] mx-auto md:mx-0">1. Membangun sistem internal organisasi yang Berkelanjutan dan berlandaskan semangat kekeluargaan</h3>
         </div>
         <div>
-          <h3 class="text-2xl font-normal text-center text-[#171614]">3. Menjadikan PPI Jerman wadah pengembangan diri bagi para pelajar Indonesia di Jerman baik dalam bidang akademik maupun non-akademik</h3>
+          <h3 data-aos="fade-up" data-aos-delay="100" class="text-lg sm:text-xl md:text-xl lg:text-xl xl:text-2xl leading-relaxed font-normal text-center md:text-left text-[#171614] max-w-prose md:max-w-[40ch] mx-auto md:mx-0">3. Menjadikan PPI Jerman wadah pengembangan diri bagi para pelajar Indonesia di Jerman baik dalam bidang akademik maupun non-akademik</h3>
         </div>
       </div>
       <!-- Right column -->
       <div class="space-y-8">
         <div>
-          <h3 class="text-2xl font-normal text-center text-[#171614]">2. Membangun ruang komunikasi dan kolaborasi yang positif antara PPI cabang dan PPI Jerman</h3>
+          <h3 data-aos="fade-up" data-aos-delay="200" class="text-lg sm:text-xl md:text-xl lg:text-xl xl:text-2xl leading-relaxed font-normal text-center md:text-left text-[#171614] max-w-prose md:max-w-[40ch] mx-auto md:mx-0">2. Membangun ruang komunikasi dan kolaborasi yang positif antara PPI cabang dan PPI Jerman</h3>
         </div>
         <div>
-          <h3 class="text-2xl font-normal text-center text-[#171614]">4. Memanfaatkan teknologi digital untuk meningkatkan aksesibilitas informasi dan mengoptimalkan penyelenggaraan kegiatan</h3>
+          <h3 data-aos="fade-up" data-aos-delay="300" class="text-lg sm:text-xl md:text-xl lg:text-xl xl:text-2xl leading-relaxed font-normal text-center md:text-left text-[#171614] max-w-prose md:max-w-[40ch] mx-auto md:mx-0">4. Memanfaatkan teknologi digital untuk meningkatkan aksesibilitas informasi dan mengoptimalkan penyelenggaraan kegiatan</h3>
         </div>
       </div>
     </div>
     <!-- Center block -->
-    <div class="mt-12 max-w-2xl mx-auto text-center">
+    <div class="mt-12 max-w-3xl mx-auto text-center px-4">
       <div>
-        <h3 class="text-2xl text-[#171614]">5. Memperluas dan mempererat jejaring kerja sama dengan organisasi, komunitas, maupun elemen masyarakat lainnya di Jerman</h3>
+        <h3 data-aos="fade-up" data-aos-delay="200" class="text-lg sm:text-xl md:text-xl lg:text-xl xl:text-2xl leading-relaxed text-[#171614]">5. Memperluas dan mempererat jejaring kerja sama dengan organisasi, komunitas, maupun elemen masyarakat lainnya di Jerman</h3>
       </div>
     </div>
   </div>
 </section>
+
+    <!-- ===== NUMBERED PINNED SEQUENCE (PARALLAX-LIKE) ===== -->
+    <section id="sequence" class="relative py-16">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-8 sm:mb-14">
+          <h2 data-aos="fade-up" class="text-3xl sm:text-5xl font-extrabold text-[#275891] heading-font">Program Kerja</h2>
+        </div>
+        <!-- Sticky display -->
+        <div class="sticky top-20 sm:top-24 md:top-28 h-[70vh] md:h-[80vh] flex items-center overflow-hidden">
+          <div id="seqDisplay" class="grid md:grid-cols-5 xl:grid-cols-7 gap-6 sm:gap-8 w-full items-center">
+            <div class="hidden md:block md:col-span-2 xl:col-span-3">
+              <div id="seqNumber" class="heading-font text-[#275891]/10 text-[28vw] md:text-[24vw] lg:text-[20vw] xl:text-[16vw] 2xl:text-[14vw] leading-none select-none transition duration-500 whitespace-nowrap z-0">01</div>
+            </div>
+            <div class="md:col-span-3 xl:col-span-4 relative z-10">
+              <div class="md:hidden heading-font text-[#275891]/15 text-6xl sm:text-8xl leading-none select-none transition duration-500 text-center" id="seqNumberMobile">01</div>
+              <h3 id="seqTitle" class="mt-3 sm:mt-4 text-xl sm:text-3xl font-bold text-[#275891] transition duration-500">PEMBENTUKAN DEPARTEMEN PERS DAN RELASI MEDIA</h3>
+              <p id="seqDesc" class="mt-2 sm:mt-3 text-slate-700 text-base sm:text-lg leading-relaxed transition duration-500 max-w-prose">Melalui press release, newsletter bulanan, dan kerja sama dengan media partner, departemen ini memastikan setiap informasi tersampaikan secara jelas, kredibel, dan terstruktur.Eksposur media juga menegaskan bahwa PPI Jerman beserta cabang tetap aktif, sekaligus meningkatkan visibilitas organisasi ke calon pemangku kepentingan eksternal, seperti sponsor, pembicara, dan pengisi acara, membuka peluang kolaborasi dan dukungan yang lebih luas. Dengan pendekatan ini, PPI Jerman tampil sebagai organisasi yang tajam, kritis, dan berani bersuara, serta aktif mendukung dan mengangkat prestasi anggotanya hingga dikenal di kancah internasional.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll triggers (invisible, provide scroll length) -->
+        <div id="seqTriggers" class="space-y-24 sm:space-y-40 py-10 sm:py-20">
+          <div class="seq-trigger h-[75vh] sm:h-[90vh] md:h-screen" data-step="01" data-title="PEMBENTUKAN DEPARTEMEN PERS DAN RELASI MEDIA" data-desc="Melalui press release, newsletter bulanan, dan kerja sama dengan media partner, departemen ini memastikan setiap informasi tersampaikan secara jelas, kredibel, dan terstruktur.Eksposur media juga menegaskan bahwa PPI Jerman beserta cabang tetap aktif, sekaligus meningkatkan visibilitas organisasi ke calon pemangku kepentingan eksternal, seperti sponsor, pembicara, dan pengisi acara, membuka peluang kolaborasi dan dukungan yang lebih luas. Dengan pendekatan ini, PPI Jerman tampil sebagai organisasi yang tajam, kritis, dan berani bersuara, serta aktif mendukung dan mengangkat prestasi anggotanya hingga dikenal di kancah internasional."></div>
+          <div class="seq-trigger h-[75vh] sm:h-[90vh] md:h-screen" data-step="02" data-title="PELATIHAN KADERISASI" data-desc="Pelatihan Kaderisasi PPI Jerman merupakan program strategis yang bertujuan membekali pengurus dengan keterampilan organisasi, kepemimpinan, dan kolaborasi yang dapat diterapkan di dalam maupun di luar PPI. Program ini tidak hanya berfokus pada transfer pengetahuan, tetapi juga pada pembentukan karakter, solidaritas, dan kesiapan pengurus dalam menjaga kesinambungan organisasi.Sebagai program kerja kunci, pelatihan ini terbuka untuk seluruh pengurus PPI Jerman dan PPI cabang, sehinggaseluruh lini kepengurusan dapat berkembang secara selaras,memperkuat kesinambungan organisasi, dan memastikankaderisasi berjalan merata di tingkat nasional maupun internasional."></div>
+          <div class="seq-trigger h-[75vh] sm:h-[90vh] md:h-screen" data-step="03" data-title="CAREER & NETWORKING EVENT" data-desc="Career & Networking Event PPI Jerman merupakan program pengembangan diri bagi anggota untuk mempersiapkan masa depan profesional dan akademik. Acara ini mempertemukan mahasiswa dengan tenaga profesional, praktisi, dan mitra industri untuk berbagi pengalaman, membuka peluang karier,serta memperluas jaringan.Melalui seminar, workshop, mentoring, dan sesi networking, program ini memberikan akses pada wawasan dan peluang yang relevan dengan bidang masing-masing. Dengan demikian,PPI Jerman berkomitmen untuk mendukung kesuksesan karier anggotanya serta menjembatani hubungan antara mahasiswa dan dunia profesional di Jerman."></div>
+          <div class="seq-trigger h-[75vh] sm:h-[90vh] md:h-screen" data-step="04" data-title="NEXTCHAPTER DEUTSCHLAND" data-desc="NextChapter Deutschland hadir sebagai program yang ditujukan bagi pelajar dan mahasiswa baru Indonesia yang akan memulai perjalanan akademiknya di Jerman. Program ini menjadi langkah awal bagi mahasiswa baru untuk memahami kehidupan di Jerman, mulai dari hal-hal praktis sehari-hari hingga wawasan akademik dan sosial, sekaligus membekali mereka dengan panduan dan informasi praktis yang berguna. Untuk memaksimalkan jangkauan dan kemudahan akses, program ini akan disajikan dalam beberapa format: booklet yang diunggah di website PPI Jerman, webinar yang dilaksanakan satu kali setiap semester, serta video-video praktis yang akan diunggah di Instagram PPI Jerman. "></div>
+        </div>
+      </div>
+    </section>
     <!-- ===== TESTIMONIALS (placeholder) ===== -->
     <section id="testimonials" class="py-20">
       <div class="max-w-6xl mx-auto text-center">
@@ -129,7 +208,112 @@
 
     <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+
+    // Global reveal-on-scroll with AOS attributes
+    document.querySelectorAll('section, header, footer, img, h1, h2, h3, p, nav a').forEach((el, idx) => {
+      if (!el.getAttribute('data-aos')) {
+        el.setAttribute('data-aos', 'fade-up');
+        el.setAttribute('data-aos-delay', String(Math.min(200, (idx % 5) * 50)));
+      }
+    });
+
+    // Mobile menu toggle
+    const menuButton = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (menuButton && mobileMenu) {
+      menuButton.addEventListener('click', () => {
+        const willOpen = mobileMenu.classList.contains('hidden');
+        mobileMenu.classList.toggle('hidden');
+        menuButton.setAttribute('aria-expanded', String(willOpen));
+      });
+
+      // Close menu when clicked
+      mobileMenu.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          if (!mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.add('hidden');
+            menuButton.setAttribute('aria-expanded', 'false');
+          }
+        });
+      });
+    }
+
+    // AOS initialization
+    const addAosScript = () => {
+      const script = document.createElement('script');
+      script.src = 'https://unpkg.com/aos@2.3.4/dist/aos.js';
+      script.onload = () => {
+        if (window.AOS) {
+          window.AOS.init({
+            duration: 700,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 80,
+          });
+        }
+      };
+      document.body.appendChild(script);
+    };
+    addAosScript();
+    
+    // Sticky stage number updater
+    const stageNumberEl = document.getElementById('stageNumber');
+    const stages = document.querySelectorAll('.stage');
+    if (stageNumberEl && stages.length) {
+      const io = new IntersectionObserver((entries) => {
+        // sort by intersection ratio to pick the most visible
+        const visible = entries
+          .filter(e => e.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (visible) {
+          const step = visible.target.getAttribute('data-step');
+          if (step) stageNumberEl.textContent = step;
+        }
+      }, { root: null, threshold: [0.2, 0.4, 0.6, 0.8] });
+      stages.forEach((s) => io.observe(s));
+    }
+
+    // Parallax-like pinned sequence updater
+    const seqNumber = document.getElementById('seqNumber');
+    const seqNumberMobile = document.getElementById('seqNumberMobile');
+    const seqTitle = document.getElementById('seqTitle');
+    const seqDesc = document.getElementById('seqDesc');
+    const triggers = Array.from(document.querySelectorAll('#seqTriggers .seq-trigger'));
+    if (seqNumber && seqTitle && seqDesc && triggers.length) {
+      const updateDisplay = (step, title, desc) => {
+        [seqNumber, seqNumberMobile].forEach((el) => { if (el) el.textContent = step; });
+        seqTitle.textContent = title;
+        seqDesc.textContent = desc;
+      };
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const step = entry.target.getAttribute('data-step') || '';
+            const title = entry.target.getAttribute('data-title') || '';
+            const desc = entry.target.getAttribute('data-desc') || '';
+            // Animate fade on change
+            [seqTitle, seqDesc].forEach((el) => {
+              el.classList.add('opacity-0', '-translate-y-2');
+              setTimeout(() => {
+                updateDisplay(step, title, desc);
+                el.classList.remove('opacity-0', '-translate-y-2');
+                el.classList.add('opacity-100', 'translate-y-0');
+              }, 150);
+            });
+            [seqNumber, seqNumberMobile].forEach((el) => {
+              if (!el) return;
+              el.classList.add('opacity-0');
+              setTimeout(() => {
+                el.textContent = step;
+                el.classList.remove('opacity-0');
+              }, 150);
+            });
+          }
+        });
+      }, { threshold: 0.6 });
+      triggers.forEach((t) => obs.observe(t));
+    }
+   </script>
   </body>
 </html>
 
